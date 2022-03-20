@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex">
+        <div class="logo flex">
+            <img src="img/logo.png" alt="">
+            <i>Portfolio web &reg;</i>
+        </div>
+
+        <div>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Blogs">Blogs</a>
+            <a href="#Contact">Contacts</a>
+        </div>
+
+        <div>
+            <button class="btn nav-btn">Sign- in / up</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="landingPage flex">
+            <div class="lpContent">
+                <h2>Hey, <span id="greetingMsg"></span>..</h2>
+                <br>
+                <h3>I'm Mohsin Raja</h3>
+                <br>
+                <p class="contents">
+                    I'm begining my introduction greeting you salam - Assalamualaikum dears.. <br>
+                    I'm Muhammad Mohsin Raja , I have skills on Web Devlopment , Problem Solving and other progamming.. <br>
+                    I'm very much Interested in Devlopment catagory .. I will try my best to solve or do a good project for my Company ..    <br>
+                    Thanks a lot for your valueable time ..
+                </p>
+                <br>
+                <button class="btn">Know-more</button>
+            </div>
+            <div class="lpImg">
+                <img src="img/bg.webp" alt="">
+            </div>
+        </div>
+
+
+        <h2 id="About" class="title">About Myself..</h2>
+        <div class="aboutDev flex">
+            <img src="img/mohsin.jpeg" alt="">
+            <p class="contents">
+                I'm Muhammad Mohsin Raja resident of North Dinajapur, WB, India <br>
+                I have done my H.S from K A H S with 90% Marks in 500 in 2020 <br>
+                I have passed out M.P from S B with 84.71% in 700 in 2018 <br>
+                Now I'm doing B.Tech in C S E currently in 2nd year 4th Semester <br>
+                I will get pleased to do my work in best effort and will make my client happier.. <br>
+                Thanks for your valueable time your spend here .. love from heart
+            </p>
+        </div>
+
+
+        <h2 id="Services" class="title center">Providable Services..</h2>
+        <div class="serviceContainer">
+            <small>We Provide high standard clean websites for bussiness uses..</small>
+            <div class="boxes flex">
+                <div class="box">
+                    <img src="img/lapt.png" alt="">
+                    <h3>Dynamic Websites</h3>
+                    <p class="contents">we provide high standard clean websites for bussiness uses. Our websites are dynamic higher traffic supports. Easy to use, managing is very simple.</p>
+                    <i>Read-more..</i>                    
+                </div>
+
+                <div class="box">
+                    <img src="img/ph.png" alt="">
+                    <h3>Awesome Apps</h3>
+                    <p class="contents">we provide high standard clean Application for bussiness uses. Our Apps are dynamic higher traffic supports. Easy to use, managing the Apps is very simple. </p>
+                    <i>Read-more..</i>
+                </div>
+
+                <div class="box">
+                    <img src="img/sampleweb.png" alt="">
+                    <h3>Others samples</h3>
+                    <p class="contents">Here is a sample of a simple website of image gallery with a clean look and high standard 
+                    quality. very simple and attractive too</p>
+                    <i>Read-more..</i>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title center" id="Blogs">Our Blogs..</h2>
+        <div class="blogContainer flex">
+            <div class="box">
+                <img src="img/events.jpg" alt="">
+                <h3>A awesome ox vs bull math..</h3>
+                <p class="contents">
+                    We visit Newtown last day there we enjoyed a awesome cricket match organise by the students of A U 
+                    we enjoyed very much and that's was very interesting.
+                </p>
+                <i>Read-more..</i>
+            </div>
+            <div class="box">
+                <img src="img/students.jpg" alt="">
+                <h3>Visit to a Reunion of A U..</h3>
+                <p class="contents">
+                    A Reunion programme of our University was held two before. Our team went there, we met with many of our 
+                    seniors juniors and professional there.
+                </p>
+                <i>Read-more..</i>
+            </div>
+            <div class="box">
+                <img src="img/notice.png" alt="">
+                <h3>Preparing notice for teams..</h3>
+                <p class="contents">
+                    Our Organisation organise a tour to Digha for a trip. We are making notices to inform our whole community 
+                    to join us there.
+                </p>
+                <i>Read-more..</i>
+            </div>
+        </div>
+
+        <h2 id="Contact" class="title center">Contact us..</h2>
+        <div class="contact-us flex">
+            <div class="mailBox flex">
+               <div class="flex icon">
+                    <h3 class="ico">&#9993;</h3>
+                    <h2 class="con">mailus@outlook.com</h2>
+               </div>
+               <div class="flex icon">
+                    <h3 class="ico">&#9775;</h3>
+                    <h2 class="con">www.visitourweb.com</h2>
+               </div>
+               <div class="flex icon">
+                    <h3 class="ico">&#9742;</h3>
+                    <h2 class="con">+91 0-8670-2921-5621</h2>
+               </div>
+               <div class="flex icon">
+                    <h3 class="ico">&#9993;</h3>
+                    <h2 class="con">mailusout@gmail.com</h2>
+               </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="/signup" method="post">
+                    <input type="text" id="name" name="name" placeholder="Enter your Name..">
+                    <input type="email" id="email" name="email" placeholder="Enter your Email..">
+                    <input type="number" id="phone" name="phone" placeholder="Enter your Contact..">
+                    <textarea placeholder="Message for us.." name="message" id="message" cols="30" rows="10"></textarea>
+                    <input id="submitBtn" class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+            <span>join me through... </span>
+        <div class="footer-icons">
+            <img class="fb" src="img/fb.png" alt="">
+            <img class="wp" src="img/wp.png" alt="">
+            <img class="ig" src="img/ig.png" alt="">
+            <img class="twit" src="img/twit.png" alt="">
+            <img class="mail" src="img/mail.png" alt="">
+        </div>
+        <span>
+            Copyrights&copy; | <i> Portfolio web &reg; </i> | Alrights reserveds!!
+        </span>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
