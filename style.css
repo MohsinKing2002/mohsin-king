@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-/*  utility class */
+/*================================= Utilities section start ===================================*/
 .flex{
     display: flex;
     align-items: center;
 }
+
+/*================================= utilities section end ===================================*/
+
+/*================================= Navigation Bar ===================================*/
 
 nav{
     background-color: #302a2a;
@@ -73,6 +80,8 @@ nav a:hover{
     text-align: center;
 }
 
+/*================================= Landing Page section ===================================*/
+
 .landingPage{
     background-color: #ffffff;
     padding: 10px;
@@ -100,14 +109,19 @@ nav a:hover{
     font-size: 1.3rem;
     letter-spacing: 1.3px;
 }
+.typing{
+    color: maroon;
+}
 .contents{
     color: maroon;
     font-weight: 500;
     font-size: 1.2rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
     line-height: 1.5;
     padding: 5px;
 }
+
+/*================================= about section ===================================*/
 
 .aboutDev{
     background-color: azure;
@@ -120,19 +134,74 @@ nav a:hover{
     border-radius: 15px;
 }
 
-.serviceContainer{
-    background-color: azure;
-    padding: 20px;
-}
+/*================================= skills using swipper.js ===================================*/
 
-.serviceContainer small{
-    display: block;
-    text-align: center;
-    font-size: 1rem;
-    color: yellowgreen;
-    letter-spacing: 1.5px;
-    margin-bottom: 7px;
-}
+ .swiper {
+     width: 100%;
+     height: 100%;
+ }
+
+ .swiper-slide {
+     padding: 1.5rem 0;
+     text-align: center;
+     background: #fff;
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .slider-box{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 10px;
+     margin: 0 !important;
+ }
+
+ .slider-box p{
+     color: indigo;
+     padding: 10px 0;
+ }
+
+ .slider-box:hover{
+    background-color: rgb(239, 239, 252);
+ }
+
+ .swiper-slide img {
+     display: block;
+     height: 20vh;
+     border-radius: 8px;
+     margin-bottom: 15px;
+     object-fit: cover;
+ }
+
+ .project-link{
+     padding: 15px 0;
+     letter-spacing: 1px;
+     font-weight: bold;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .project-link:hover{
+     color: red;
+     text-decoration: underline;
+ }
+
+/*================================= skills section ===================================*/
 
 .boxes{
     justify-content: space-between;
@@ -172,6 +241,8 @@ nav a:hover{
     border-radius: 10px;
 }
 
+/*================================= contact section ===================================*/
+
 .contact-us{
     justify-content: space-around;
     background-color: azure;
@@ -205,12 +276,16 @@ nav a:hover{
     width: 30vw;
 }
 
+.contact-form :where(input, textarea){
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blue;
+}
 .contact-form input{
     width: 80%;
     padding: 6px;
     margin: 5px 0;
     font-size: 1.1rem;
-    outline: none;
 }
 
 .contact-form textarea{
@@ -219,17 +294,14 @@ nav a:hover{
     padding: 8px;
     width: 80%;
     font-size: 1.1rem;
-    outline: none;
-    resize: none;
 }
 
 .contact-form textarea::-webkit-scrollbar{
     display: none;
 }
 
-#submitBtn{
-    width: 10vw;
-}
+
+/*================================= footer section ===================================*/
 
 footer{
     background-color: #302a2a;
@@ -255,30 +327,9 @@ footer i{
     box-shadow: 1px 2px 15px -5px white;
 }
 
-.fb:hover{
-    background-color: #1690e7;
-    color: white;
-}
-.wp:hover{
-    background-color: #40c351;
-    color: white;
-}
-.ig:hover{
-    background-color: #9252a8;
-    color: white;
-}
-.twit:hover{
-    color: blue;
-    background-color: white;
-}
-.mail:hover{
-    background-color: #1690e7;
-    color: white;
-}
 
+/*================================= Making Responsive ===================================*/
 
-
-/*  making responsive to the website    */
 @media screen and (max-width: 1120px) {
     .logo{
         margin: 10px 0;
@@ -308,6 +359,14 @@ footer i{
     }
     .lpContent{
         width: 90vw;
+    }
+
+    .lpContent h2{
+        font-size: 20px;
+    }
+
+    .lpImg img{
+        height: 40vh;
     }
 
     .aboutDev{
@@ -370,5 +429,9 @@ footer i{
     .footer-icons img{
         margin: 5px;
         height: 5vh;
+    }
+
+    .swiper-slide img{
+        height: 15vh;
     }
 }

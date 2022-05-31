@@ -1,5 +1,69 @@
 //const { json } = require("express/lib/response");
 
+//typing code
+let typed = new Typed(".typing", {
+    strings: ["Coder", "Fullstack Developer", "MERN Developer!"],
+    typeSpeed: 150,
+    backSpeed: 100,
+    loop: true
+})
+
+/* ==================== Making Responsive ===================== */
+
+const js_media = (web_width)=>{
+    if (web_width.matches) {
+        //swipper js code
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+    else {
+        //swipper js code
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+}
+
+const web_width = window.matchMedia("(max-width: 1120px)");
+
+js_media(web_width);
+
+web_width.addEventListener('change', js_media);
+
+
 let greetMsg = document.getElementById('greetingMsg');
 let currTime = new Date().getHours();
 
@@ -18,30 +82,3 @@ else if(currTime >= 18 && currTime < 20){
 else{
     greetMsg.innerHTML = 'Good Night';
 }
-
-
-let submitBtn = document.getElementById('submitBtn');
-
-submitBtn.addEventListener('click', async(e)=>{
-    e.preventDefault();
-
-    const {name, email, phone, message} = user;
-
-    const res = await fetch("/conn", {
-        method: "POST",
-        headers:{
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            name, email, phone, message
-        })
-    })
-
-    const data = await res.json();
-    if(!data){
-        window.alert("invalid submission !!!")
-    }
-    else{
-        window.alert("submission successfull")
-    }
-})
