@@ -419,4 +419,7 @@ footer a{
     .contact_form {
         width: 75vw;
     }
+    .details_icon{
+        height: 3vh;
+    }
 }
