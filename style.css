@@ -242,62 +242,43 @@ nav a:hover{
 }
 
 /*================================= contact section ===================================*/
+.contact-us h4{
+    font-size: 15px;
+}
+.my_details span{
+    margin: 12px 0;
+}
+.details_icon{
+    height: 4vh;
+    margin-right: 1rem;
+    line-height: 1.7;
+}
+
+.contact_form{
+    flex-direction: column;
+    width: 30vw;
+}
+
+.contact_form :where(input, textarea){
+    border: 2px solid olive;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px;
+    margin: 5px 0;
+    width: 90%;
+    font-size: 16px;
+}
+
+.contact_form textarea{
+    height: 16vh;
+    resize: none;
+}
 
 .contact-us{
     justify-content: space-around;
     background-color: azure;
     text-align: center;
     padding: 10px;
-}
-.mailBox{
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.con{
-    font-weight: 500;
-    padding: 15px 0;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    color: magenta;
-}
-.con:focus, 
-.con:hover{
-    cursor: pointer;
-    color: red;
-}
-.ico{
-    color: blueviolet;
-    font-size: 2rem;
-    margin-right: 3rem;
-}
-
-.contact-form{
-    width: 30vw;
-}
-
-.contact-form :where(input, textarea){
-    border: none;
-    outline: none;
-    border-bottom: 1px solid blue;
-}
-.contact-form input{
-    width: 80%;
-    padding: 6px;
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
-
-.contact-form textarea{
-    border-radius: 7px;
-    height: 15vh;
-    padding: 8px;
-    width: 80%;
-    font-size: 1.1rem;
-}
-
-.contact-form textarea::-webkit-scrollbar{
-    display: none;
 }
 
 
@@ -309,22 +290,22 @@ footer{
     font-size: 1.3rem;
     letter-spacing: 2px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 footer i{
     letter-spacing: 3px;
     filter: drop-shadow(1px 2px 4px rgb(226, 250, 9));    
 }
 
-.footer-icons{
-    padding: 10px;
+footer a{
+    text-decoration: none;
 }
 
-.footer-icons img{
-    cursor: pointer;
-    margin: 2px 20px;
+.footer_links_img{
+    height: 5.5vh;
     border-radius: 10px;
-    box-shadow: 1px 2px 15px -5px white;
+    cursor: pointer;
+    margin: 0 1.4rem;
 }
 
 
@@ -433,5 +414,9 @@ footer i{
 
     .swiper-slide img{
         height: 15vh;
+    }
+
+    .contact_form {
+        width: 75vw;
     }
 }

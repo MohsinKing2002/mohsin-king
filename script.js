@@ -16,7 +16,7 @@ const js_media = (web_width)=>{
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
-            slidesPerGroup: 2,
+            slidesPerGroup: 1,
             loop: true,
             loopFillGroupWithBlank: true,
             autoplay: {
@@ -38,7 +38,7 @@ const js_media = (web_width)=>{
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
-            slidesPerGroup: 2,
+            slidesPerGroup: 1,
             loop: true,
             loopFillGroupWithBlank: true,
             autoplay: {
