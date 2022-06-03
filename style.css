@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 /*================================= Utilities section start ===================================*/
 .flex{
     display: flex;
@@ -119,6 +120,10 @@ nav a:hover{
     letter-spacing: 0.4px;
     line-height: 1.5;
     padding: 5px;
+}
+
+.about_contents{
+    padding: 8px;
 }
 
 /*================================= about section ===================================*/
@@ -260,7 +265,7 @@ nav a:hover{
 }
 
 .contact_form :where(input, textarea){
-    border: 2px solid olive;
+    border: 1px solid olive;
     border-radius: 6px;
     outline: none;
     padding: 8px;
