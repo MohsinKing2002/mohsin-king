@@ -327,6 +327,10 @@ footer a{
         margin: 10px 0;
     }
 
+    .logo img{
+        height: 4vh;
+    }
+
     .logo i{
         font-size: 15px;
     }
@@ -344,10 +348,6 @@ footer a{
     nav a{
         margin: 5px;
         font-size: 15px;
-    }
-
-    .nav-btn{
-        display: none;
     }
 
     .landingPage{
