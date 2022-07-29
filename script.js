@@ -1,8 +1,12 @@
-//const { json } = require("express/lib/response");
+//make navigation bar sticky
+window.addEventListener("scroll", ()=>{
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 0)
+})
 
 //typing code
 let typed = new Typed(".typing", {
-    strings: ["Coder", "Fullstack Developer", "MERN Developer!"],
+    strings: ["MERN Developer !", "Coder !","C++ Programmer !", "Fullstack Web Developer !"],
     typeSpeed: 150,
     backSpeed: 100,
     loop: true

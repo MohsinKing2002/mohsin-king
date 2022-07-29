@@ -18,14 +18,24 @@ html{
     align-items: center;
 }
 
+
 /*================================= utilities section end ===================================*/
 
 /*================================= Navigation Bar ===================================*/
 
 nav{
-    background-color: #302a2a;
+    background-color: #b2ebf2bf;
     padding: 8px 3rem;
     justify-content: space-between;
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+    z-index: 999;
+}
+
+.sticky{
+    background-color: #302a2a;
+    padding: 8px 3rem;
 }
 
 .logo i{
@@ -84,6 +94,7 @@ nav a:hover{
 /*================================= Landing Page section ===================================*/
 
 .landingPage{
+    margin: 20px 0;
     background-color: #ffffff;
     padding: 10px;
     font-size: 1.2em;
@@ -120,8 +131,9 @@ nav a:hover{
     font-weight: 500;
     font-size: 1.2rem;
     letter-spacing: 0.4px;
-    line-height: 1.5;
-    padding: 5px;
+    line-height: 1.7;
+    padding: 3px;
+    text-align: justify;
 }
 
 /*================================= about section ===================================*/
@@ -259,7 +271,7 @@ nav a:hover{
 }
 
 .contact_form :where(input, textarea){
-    border: 1px solid olive;
+    border: 1px solid lightblue;
     border-radius: 6px;
     outline: none;
     padding: 8px;
@@ -325,6 +337,10 @@ footer a{
         justify-content: space-between;
     }
 
+    .sticky {
+        padding: 10px;
+    }
+
     nav a{
         margin: 5px;
         font-size: 15px;
@@ -338,11 +354,16 @@ footer a{
         flex-direction: column;
     }
     .lpContent{
+        margin-top: 6rem;
         width: 90vw;
     }
 
     .lpContent h2{
         font-size: 20px;
+    }
+
+    .lpContent h3{
+        height: 7vh;
     }
 
     .lpImg img{
