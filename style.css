@@ -145,8 +145,9 @@ nav a:hover{
 }
 
 .aboutDev img{
-    height: 35vh;
-    border-radius: 15px;
+    height: 32vh;
+    border: 2px solid darkmagenta;
+    border-radius: 50%;
 }
 
 /*================================= skills using swipper.js ===================================*/
