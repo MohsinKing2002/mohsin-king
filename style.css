@@ -23,21 +23,6 @@ html{
 
 /*================================= Navigation Bar ===================================*/
 
-nav{
-    background-color: #7d737f;
-    padding: 8px 3rem;
-    justify-content: space-between;
-    position: fixed;
-    transition: 0.4s ease-in-out;
-    width: 100%;
-    z-index: 999;
-}
-
-.sticky{
-    background-color: #302a2a;
-    padding: 8px 3rem;
-}
-
 .logo i{
     color: azure;
     font-size: 1.4rem;
@@ -45,6 +30,7 @@ nav{
     font-weight: 600;
     filter: drop-shadow(1px 2px 4px rgb(226, 250, 9));
 }
+
 .logo img{
     height: 6vh;
     border-radius: 100%;
@@ -52,14 +38,10 @@ nav{
 }
 
 nav a{
-    font-size: 1.4rem;
-    margin: 0 1rem !important;
+    font-size: 1.2rem;
+    margin: 0 0.6rem !important;
     text-decoration: none;
     transition: all 0.4s ease;
-}
-
-nav a:hover{
-    color: lightskyblue;
 }
 
 .btns{
@@ -141,6 +123,10 @@ nav a:hover{
     background-color: azure;
     padding: 10px 80px;
     justify-content: space-around;
+}
+
+.aboutDev p{
+    width: 60%;
 }
 
 .aboutDev img{
@@ -317,6 +303,7 @@ footer a{
     border-radius: 10px;
     cursor: pointer;
     margin: 0 1.4rem;
+    margin-bottom: 1rem !important;
 }
 
 
@@ -329,6 +316,13 @@ footer a{
 
     .logo img{
         height: 4vh;
+    }
+    .offcanvas-header{
+        background-color: darkslategray !important;
+    }
+
+    .offcanvas-header .logo img{
+        margin-right: 0.5rem !important;
     }
 
     .logo i{
@@ -380,8 +374,13 @@ footer a{
         padding: 10px;
     }
 
+    .aboutDev p{
+        width: 90% !important;
+    }
+
     .aboutDev img{
         margin: 10px 0;
+        margin-bottom: 1.5rem;
     }
 
     .boxes{
