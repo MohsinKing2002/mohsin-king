@@ -34,7 +34,7 @@ html{
 .logo img{
     height: 6vh;
     border-radius: 100%;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 nav a{
@@ -115,6 +115,23 @@ nav a{
     line-height: 1.7;
     padding: 3px;
     text-align: justify;
+}
+
+.top-btn{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vh;
+    opacity: 1;
+    z-index: 1111;
+}
+#top-btn{
+    display: none;
+}
+.top-btn button{
+    padding: 3.5px !important;
+}
+.top-btn img{
+    height: 6vh;
 }
 
 /*================================= about section ===================================*/

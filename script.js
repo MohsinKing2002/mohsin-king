@@ -1,3 +1,14 @@
+//back to top button implement
+let btn = document.getElementById("top-btn");
+console.log(btn);
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 20) {
+    btn.style.display = "inherit";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
 //typing code
 let typed = new Typed(".typing", {
   strings: [
