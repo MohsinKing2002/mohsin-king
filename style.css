@@ -123,9 +123,10 @@ nav a{
     right: 1vh;
     opacity: 1;
     z-index: 1111;
+    transition: all 0.5s ease-in-out;
 }
 #top-btn{
-    display: none;
+    bottom: -10vh;
 }
 .top-btn button{
     padding: 3.5px !important;
@@ -193,6 +194,8 @@ nav a{
  .slider-box p{
      color: indigo;
      padding: 10px 0;
+     width: 70% !important;
+     text-align: justify;
  }
 
  .swiper-slide img {
