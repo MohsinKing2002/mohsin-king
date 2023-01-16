@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 500) {
     btn.style.bottom = "1vh";
   } else {
-    btn.style.bottom = "-10vh";
+    btn.style.bottom = "-15vh";
   }
 });
 

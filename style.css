@@ -50,11 +50,16 @@ nav a{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
+    border: 1px solid lightblue;
 }
 
 .btns:hover{
     background-color: lightskyblue;
     color: white;
+}
+
+.btns a:hover{
+    color: azure !important;
 }
 
 .Container{
@@ -123,10 +128,10 @@ nav a{
     right: 1vh;
     opacity: 1;
     z-index: 1111;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 #top-btn{
-    bottom: -10vh;
+    bottom: -15vh;
 }
 .top-btn button{
     padding: 3.5px !important;
@@ -201,7 +206,7 @@ nav a{
      display: block;
      height: 20vh;
      border-radius: 8px;
-     margin-bottom: 15px;
+     margin-bottom: 18px;
      object-fit: cover;
  }
 
@@ -430,6 +435,10 @@ footer a{
     .contents{
         font-size: 14px;
         line-height: 1.5;
+    }
+
+    .slider-box h2{
+        font-size: 18px;
     }
 
     #submitBtn{
