@@ -3,7 +3,7 @@ let btn = document.getElementById("top-btn");
 console.log(btn);
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 500) {
-    btn.style.bottom = "1vh";
+    btn.style.bottom = "2.5vh";
   } else {
     btn.style.bottom = "-15vh";
   }
