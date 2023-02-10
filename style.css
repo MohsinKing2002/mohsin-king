@@ -41,7 +41,11 @@ nav a{
     font-size: 1.2rem;
     margin: 0 0.6rem !important;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: all 0.6s ease-in-out !important;
+}
+
+nav a:hover{
+    color: azure !important;
 }
 
 .btns{
