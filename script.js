@@ -15,6 +15,7 @@ let typed = new Typed(".typing", {
     "MERN Developer !",
     "Coder !",
     "C++ Programmer !",
+    "React Native Developer !",
     "Fullstack Web Developer !",
   ],
   typeSpeed: 150,
