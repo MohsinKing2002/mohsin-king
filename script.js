@@ -12,8 +12,8 @@ window.addEventListener("scroll", () => {
 //typing code
 let typed = new Typed(".typing", {
   strings: [
+    "Aspiring Software Engineer !",
     "MERN Developer !",
-    "Coder !",
     "C++ Programmer !",
     "React Native Developer !",
     "Fullstack Web Developer !",
