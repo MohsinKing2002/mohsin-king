@@ -93,6 +93,17 @@ nav a:hover{
 
 .lpImg img{
     height: 65vh;
+    animation: jerk 2s infinite alternate-reverse;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes jerk {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
 }
 
 .lpContent{
@@ -161,6 +172,17 @@ nav a:hover{
     height: 32vh;
     border: 2px solid darkmagenta;
     border-radius: 50%;
+    animation: big 2s infinite alternate-reverse;
+    transition: all 0.4s ease-in-out;
+}
+
+@keyframes big {
+    0%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.1);
+    }
 }
 
 /*================================= skills using swipper.js ===================================*/
@@ -216,10 +238,10 @@ nav a:hover{
 
  .project-link{
      padding: 15px 0;
-     letter-spacing: 1px;
      font-weight: bold;
      cursor: pointer;
      text-decoration: none;
+     margin: 0 4px;
  }
 
  .project-link:hover{
