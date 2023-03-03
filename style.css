@@ -178,10 +178,10 @@ nav a:hover{
 
 @keyframes big {
     0%{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
     100%{
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
@@ -297,9 +297,9 @@ nav a:hover{
     margin: 12px 0;
 }
 .details_icon{
-    height: 4vh;
     margin-right: 1rem;
-    line-height: 1.7;
+    font-size: 25px;
+    color: blue;
 }
 
 .contact_form{
@@ -404,8 +404,11 @@ footer a{
         flex-direction: column;
     }
     .lpContent{
-        margin-top: 6rem;
+        margin-top: 4rem;
         width: 90vw;
+    }
+    .details_icon{
+        font-size: 18px;
     }
 
     .lpContent h2{
