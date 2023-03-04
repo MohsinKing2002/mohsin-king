@@ -40,6 +40,7 @@ html{
     letter-spacing: 3px;
     font-weight: 600;
     filter: drop-shadow(1px 2px 4px rgb(226, 250, 9));
+    animation: slideRight 1s ease forwards;
 }
 
 .logo img{
