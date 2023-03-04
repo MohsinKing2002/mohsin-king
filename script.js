@@ -1,6 +1,5 @@
 //back to top button implement
 let btn = document.getElementById("top-btn");
-console.log(btn);
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 500) {
     btn.style.bottom = "2.5vh";
@@ -21,6 +20,30 @@ let typed = new Typed(".typing", {
   typeSpeed: 150,
   backSpeed: 100,
   loop: true,
+});
+
+/* ==================== Making Responsive ===================== */
+
+/*==================== QUALIFICATION TABS ====================*/
+
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("qualification__active");
+    });
+
+    target.classList.add("qualification__active");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("qualification__active");
+    });
+    tab.classList.add("qualification__active");
+  });
 });
 
 /* ==================== Making Responsive ===================== */
