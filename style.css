@@ -429,11 +429,16 @@ footer a{
     --z-modal: 1000;
 }
 
+.experience{
+    background-color: azure;
+    padding: 15px 10px;
+}
+
 .qualification__tabs {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .qualification__button {
@@ -573,6 +578,10 @@ footer a{
 
     .aboutDev{
         flex-direction: column;
+        padding: 10px;
+    }
+
+    .experience{
         padding: 10px;
     }
 
