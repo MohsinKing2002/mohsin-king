@@ -253,6 +253,30 @@ nav a:hover{
      object-fit: cover;
  }
 
+ .projects:hover .project-details{
+    right: 15%;
+ }
+ .project-img{
+    transition: 1s;
+ }
+ .projects:hover .project-img{
+    opacity: 0.12 !important;
+ }
+
+ .project-details{
+    position: absolute;
+    top: 3%;
+    right: -100%;
+    height: 50%;
+    border: 0.3px dashed;
+    border-radius: 6px !important;
+    /* background-color: azure; */
+    overflow-y: auto;
+    padding: 10px !important;
+    text-align: justify !important;
+    transition: 1s;
+ }
+
  .project-link{
      padding: 15px 0;
      font-weight: bold;
