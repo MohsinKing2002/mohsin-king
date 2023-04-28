@@ -109,12 +109,26 @@ nav a:hover{
     transition: all 1s ease-in-out;
 }
 
+.bs-icons{
+    animation: coloring 2s infinite alternate-reverse;
+    transition: all 1s ease-in-out;
+}
+
 @keyframes jerk {
     0%{
         transform: translateX(0px);
     }
     100%{
         transform: translateX(10px);
+    }
+}
+
+@keyframes coloring {
+    0%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translatey(5px);
     }
 }
 
